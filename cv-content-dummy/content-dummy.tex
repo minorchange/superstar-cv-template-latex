@@ -1,0 +1,160 @@
+%------------------------------------------------------------------------------
+%	 CV Left Column
+%------------------------------------------------------------------------------
+
+\newcommand{\profilepic}{cv-content-dummy/imgs/1280px-Patrick_Star.svg.png}
+\newcommand{\cvname}{Patrick Star}
+\newcommand{\cvjobtitle}{Krusty Krab Worker}
+\newcommand{\cvdateofbirth}{01.05.1999}
+\newcommand{\cvaddress}{Bikini Bottom} % Use \newline if more than 1 line is required
+\newcommand{\cvnumberphone}{+123456789}
+\newcommand{\cvmail}{patrick@star.org}
+
+\newcommand{\aboutmetitle}{About Me}
+\newcommand{\aboutmecontent}{
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+	ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+	in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	Excepteur sint occaecat cupidatat non proident.}
+
+
+\newcommand{\skillstitle}{Skills}
+% Each skill must have a value between 0 an 1 (float)
+\newcommand{\skillssoctitle}{Soft}
+\skillssoc{{Skill 13/0.7}, {Skill 12/1}, {Skill 11/1}}
+\newcommand{\skillstectitle}{Technical}
+\skillstec{{Skill 24/0.7},{Skill 23/0.8},{Skill 22/0.95},{{Skill 21}/1}}
+\newcommand{\skillslangtitle}{Languages}
+\skillslang{Lang 1, Lang 2, Lang 3}
+
+
+%-------------------------------------------------------------------------------
+%	 Invisible Section for Table of Contents
+%-------------------------------------------------------------------------------
+
+\newcommand{\cvtocsection}{
+	\phantomsection
+	\addcontentsline{toc}{section}{Curriculum Vitae}
+}
+
+
+%-------------------------------------------------------------------------------
+%	 CV Right Column
+%-------------------------------------------------------------------------------
+
+\newcommand{\experiencetitle}{Experience}
+\newcommand{\experiencecontent}{
+
+	\cvitem{09-Now}
+	{Job 3 at Company 3}{Location 3}{
+		\vspace{-10pt}
+		\begin{itemize}[left=-1em..0em]
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			      laboris nisi ut aliquip ex ea commodo consequat.
+			      Duis aute irure dolor in reprehenderit in voluptate velit.
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			      laboris nisi ut aliquip ex ea commodo consequat.
+			      Duis aute irure dolor in reprehenderit in voluptate velit.
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			      laboris nisi ut aliquip ex ea commodo consequat.
+			      Duis aute irure dolor in reprehenderit in voluptate velit.
+		\end{itemize}
+	}
+	\cvitem{07-09}{Job 2 at Company 2}{Location 2}{
+		\vspace{-10pt}
+		\begin{itemize}[left=-1em..0em]
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+		\end{itemize}}
+	\cvitem{05-07}{Job 1 at Company 1}{Location 1}{
+		\vspace{-10pt}
+		\begin{itemize}[left=-1em..0em]
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+		\end{itemize}}
+}
+
+\newcommand{\educationtitle}{Education}
+\newcommand{\educationcontent}{
+
+	\cvitem{04-05}
+	{Degree 3}
+	{Insitute 3}
+	{\href{https://linktothesis}
+		{Thesis: \emph{"Thesis Title"}} - Short Explanation of the Thesis
+		containing some important buzzwords.}
+	\cvitem{03-04}
+	{Degree 2}
+	{Insitute 2}
+	{Thesis: \emph{"Thesis Title"} - Short Explanation of the Thesis
+		containing some important buzzwords.}
+	\cvitem{02-03}
+	{Degree 1}
+	{Institute 1}
+	{Thesis: \emph{"Thesis Title"} - Short Explanation of the Thesis
+		containing some important buzzwords.}
+	\cvitem{99-02}
+	{General qualification for university entrance}
+	{School}
+	{}
+}
+
+\newcommand{\publicationstitle}{Publications}
+\newcommand{\publicationscontent}{
+	\cvitem{2004}
+	{Journal Name}
+	{}
+	{\href{https://linktopublication}
+		{Author 1, Author 2, Author 3, "Smart sounding title of this
+			groundbreaking publication,"
+			in Journal Name, vol. 12, no. 3, pp. 456-789, 2004.}}
+
+	\cvitem{2003}
+	{Journal Name}
+	{}
+	{\href{https://linktopublication}
+		{Author 1, Author 2, Author 3, "Smart sounding title of this
+			groundbreaking publication,"
+			in Journal Name, vol. 12, no. 3, pp. 456-789, 2003.}}
+
+	\cvitem{2002}
+	{Journal Name}
+	{}
+	{\href{https://linktopublication}
+		{Author 1, Author 2, Author 3, "Smart sounding title of this
+			groundbreaking publication,"
+			in Journal Name, vol. 12, no. 3, pp. 456-789, 2002.}}
+	\cvitem{2001}
+	{Journal Name}
+	{}
+	{\href{https://linktopublication}
+		{Author 1, Author 2, Author 3, "Smart sounding title of this
+			groundbreaking publication,"
+			in Journal Name, vol. 12, no. 3, pp. 456-789, 2001.}}
+}
+
+\newcommand{\certs}{
+
+	\framedcertificate{Certificate A 1/2}
+	{cv-content-dummy/documents/Certificate-Dummy.pdf}
+
+	\framedcertificate{Certificate A 2/2}
+	{cv-content-dummy/documents/Certificate-Dummy.pdf}
+
+	\framedcertificate{Certificate B}
+	{cv-content-dummy/documents/Certificate-Dummy.pdf}
+}
+
+% Title for the Table of contents listing the certificates
+\newcommand{\certstoctitle}{Certificates}
