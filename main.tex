@@ -29,11 +29,11 @@
 \begin{document}
 
 
+\ifx\content\undefined
 \input{cv-content-dummy/content-dummy.tex}
-% \input{../cv-content/content-en.tex}
-% \input{../cv-content/content-nz.tex}
-% \input{../cv-content/content-ca.tex}
-% \input{../cv-content/content-fr.tex}
+\else 
+\input{\content}
+\fi
 
 
 \pagenumbering{gobble}
